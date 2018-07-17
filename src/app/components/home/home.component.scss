@@ -1,0 +1,67 @@
+.container {
+  display: grid;
+  grid-template-rows: 34px auto auto;
+
+  header {
+    display: grid;
+    grid-template-columns: 68% auto;
+    background-color: #3a3a3a;
+
+    strong {
+      -webkit-app-region: drag;
+      color: #fff;
+      margin: 8px;
+    }
+
+    nav {
+      justify-self: right;
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          float: left;
+
+          img {
+            width: 12px;
+            cursor: pointer;
+            box-sizing: unset;
+          }
+
+          img#min {
+            padding: 16px 20px 16px 20px;
+          }
+
+          img#min:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+          }
+          
+          img#max {
+            padding: 11px 20px 11px 20px;
+          }
+
+          img#max:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+          }
+          
+          img#clo{
+            padding: 11px 20px 11px 20px;
+          }
+
+          img#clo:hover{
+            background-color: #ff5555;
+          }
+        }
+      }
+    }
+  }
+
+  main{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 20px;
+
+  }
+}
